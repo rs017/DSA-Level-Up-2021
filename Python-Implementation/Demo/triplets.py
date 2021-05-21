@@ -22,6 +22,8 @@ def triplet_sum(num_list, target_sum):
         while left < right:
             if (num_list[left] + num_list[right]) == remainder:
                 result.append([num_list[i], num_list[left], num_list[right]])
+                left += 1
+                right -= 1
 
             elif (num_list[left] + num_list[right]) < remainder:
                 left += 1
@@ -29,3 +31,6 @@ def triplet_sum(num_list, target_sum):
                 right -= 1
 
     return result
+
+
+print(triplet_sum([15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1], 18))

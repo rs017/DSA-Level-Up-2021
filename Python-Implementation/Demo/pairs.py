@@ -1,7 +1,7 @@
 def pair_sum(num_list, target_sum):
     """Returns a tuple of pair of numbers
     from a list of unsorted numbers
-    that sums to target_sum in linear time.
+    that sums to target_sum in linear time, assuming there is only one such pair.
     Had the list been sorted,
     we could have even used two pointer method."""
 
@@ -19,3 +19,4 @@ def pair_sum(num_list, target_sum):
 
     # If no such pair is found, return -1
     return -1
+
